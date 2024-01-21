@@ -50,13 +50,11 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* background-color: rgb(0, 255, 17); */
 }
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  /* outline: 2px solid #2196f3; */
 }
 
 /* Хедер */
@@ -268,7 +266,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.modal-btn {
+.modal_btn {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -284,12 +282,21 @@ img {
   cursor: pointer;
 }
 
-.modal-icon {
+.modal_icon {
   fill: #000000;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal_btn:hover .modal_icon,
+.modal_btn:focus .modal_icon {
+  fill: var(--accent-background);
+}
+
 /* Форма для зворотнього зв'язку в модальному вікні */
 .modal_recall {
-  position: absolute;
   top: 40px;
   left: 40px;
 
@@ -297,8 +304,12 @@ img {
 
   color: #000000;
 }
+.modal_form {
+  width: 450px;
+}
 .form_recall {
   text-align: left;
+  width: 100%;
 }
 .title_recall {
   text-align: center;
@@ -312,18 +323,42 @@ img {
 }
 .form_field {
   margin-bottom: 10px;
+  position: relative;
 }
+
 .form_field input {
   width: 100%;
 
   padding-top: 11px;
   padding-bottom: 11px;
-  padding-left: 16px;
+  padding-left: 42px;
+  padding-right: 16px;
 
-  border: 1px solid #21212133;
+  border: 1px solid;
+  border-color: #21212133;
   border-radius: 4px;
-  /* text-align: left; */
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.field_icon {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form_field input:focus ~ .field_icon {
+  fill: var(--accent-background);
+}
+.form_field input:focus {
+  border-color: var(--accent-background);
+}
+
 .form_field textarea {
   width: 100%;
   border: 1px solid #21212133;
@@ -332,6 +367,7 @@ img {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 16px;
+  padding-right: 16px;
 
   font-size: 12px;
   font-weight: 400;
@@ -339,8 +375,18 @@ img {
   letter-spacing: 0.01em;
   text-align: left;
 
+  resize: none;
   color: #75757580;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.form_field textarea:focus {
+  border-color: var(--accent-background);
+}
+
 .form_field label {
   margin-bottom: 4px;
 
@@ -351,15 +397,69 @@ img {
   text-align: left;
   color: #757575;
 }
-.send-recall {
-  text-align: center;
-}
-.button-send-recall {
-  margin-left: 165px;
-  margin-right: 165px;
-}
 .checkbox {
+  position: relative;
+  margin-top: 10px;
   margin-bottom: 30px;
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575;
+}
+
+/* Ховаемо чекбокс від браузера*/
+.checkbox_input {
+  appearance: none;
+}
+
+/* Кастомний чекбокс */
+.checkbox_icon {
+  position: absolute;
+  top: 4px;
+  left: 13px;
+  outline: solid #212121;
+  border-radius: 2px;
+  fill: #ffffff;
+
+  transition-property: background-color, outline-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* .checkbox_input:focus ~ .checkbox_icon, */
+.checkbox_input:checked ~ .checkbox_icon {
+  background-color: var(--accent-background);
+  outline-color: var(--accent-background);
+}
+
+.agreement {
+  padding-left: 36px;
+}
+.agreement_cases {
+  color: var(--accent-background);
+}
+
+.button_send_recall {
+  display: inline-block;
+
+  min-width: 200px;
+  padding: 10px 52px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-background);
+
+  background-color: var(--accent-background);
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: center;
+
+  box-shadow: 0px 4px 4px 0px #00000026;
 }
 
 /*  Особливості */
@@ -820,7 +920,9 @@ address {
   align-items: center;
 }
 .footer-button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   min-width: 200px;
   padding: 10px 28px;
@@ -858,6 +960,14 @@ address {
   font-weight: 400;
   letter-spacing: 0.03em;
   text-align: left;
+}
+
+.icon-send {
+  display: block;
+
+  margin-left: 10px;
+
+  fill: var(--prime-white-background);
 }
 
 .footer-link:hover,
