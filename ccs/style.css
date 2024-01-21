@@ -188,6 +188,7 @@ img {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
+  text-align: center;
 
   font-size: 44px;
   font-weight: 900;
@@ -208,6 +209,7 @@ img {
   color: inherit;
   cursor: pointer;
   font-family: inherit;
+  font-size: 16px;
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -250,6 +252,8 @@ img {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  padding: 40px 40px;
 }
 
 /* Початковий стан */
@@ -282,6 +286,80 @@ img {
 
 .modal-icon {
   fill: #000000;
+}
+/* Форма для зворотнього зв'язку в модальному вікні */
+.modal_recall {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+
+  display: flex;
+
+  color: #000000;
+}
+.form_recall {
+  text-align: left;
+}
+.title_recall {
+  text-align: center;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.form_field {
+  margin-bottom: 10px;
+}
+.form_field input {
+  width: 100%;
+
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 16px;
+
+  border: 1px solid #21212133;
+  border-radius: 4px;
+  /* text-align: left; */
+}
+.form_field textarea {
+  width: 100%;
+  border: 1px solid #21212133;
+  border-radius: 4px;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: left;
+
+  color: #75757580;
+}
+.form_field label {
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #757575;
+}
+.send-recall {
+  text-align: center;
+}
+.button-send-recall {
+  margin-left: 165px;
+  margin-right: 165px;
+}
+.checkbox {
+  margin-bottom: 30px;
 }
 
 /*  Особливості */
@@ -731,6 +809,55 @@ address {
 .social-link-footer:hover,
 .social-link-footer:focus {
   background-color: var(--accent-color);
+}
+/* Підписка */
+.footer-singup {
+  margin-left: 93px;
+}
+.signup_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-button {
+  display: inline-block;
+
+  min-width: 200px;
+  padding: 10px 28px;
+  border-radius: 4px;
+  border: 1px solid var(--accent-background);
+
+  background-color: var(--accent-background);
+  color: var(--prime-white-background);
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2em;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+.singup-email {
+  display: inline-block;
+  width: 358px;
+  margin-right: 12px;
+  border-radius: 4px;
+}
+.singup-email input {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  background-color: #2f303a;
+  color: #ffffff99;
+  border-radius: 4px;
+  border: 1px solid #ffffff4d;
+
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-align: left;
 }
 
 .footer-link:hover,

@@ -76,6 +76,60 @@
                   <use href="./images/sprite.svg#icon-close-modal"></use>
                 </svg>
               </button>
+              <!-- Форма подписки в модальной окне -->
+              <div class="modal_recall">
+                <form class="form_recall">
+                  <p class="title_recall">
+                    Залиште свої дані, ми вам передзвонимо
+                  </p>
+
+                  <div class="form_field">
+                    <label for="username"> Ім'я</label>
+                    <input
+                      type="text"
+                      name="username"
+                      id="username"
+                      placeholder=""
+                    />
+                  </div>
+
+                  <div class="form_field">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" name="phone" id="phone" />
+                  </div>
+
+                  <div class="form_field">
+                    <label for="email">Пошта</label>
+                    <input type="email" name="email" id="email" />
+                  </div>
+
+                  <div class="form_field">
+                    <label for="textarea">Коментар</label>
+                    <textarea
+                      name="feedback"
+                      rows="6"
+                      id="comment"
+                      placeholder="Введіть текст"
+                    ></textarea>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="agreement"
+                        value="agreement"
+                      />
+                      Погоджуюся з розсилкою та приймаю
+                      <span>Умови договору</span>
+                    </label>
+                  </div>
+                  <div class="send_recall">
+                    <button class="button_send_recall" type="submit">
+                      Відправити
+                    </button>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -587,6 +641,22 @@
               </a>
             </li>
           </ul>
+        </div>
+        <!-- Підписка на розсилку -->
+        <div class="footer-singup">
+          <p class="title-footer">Підпишіться на розсилку</p>
+          <form class="signup_form" name="signup_form">
+            <label class="singup-email">
+              <input type="email" name="email" placeholder="Email" />
+            </label>
+
+            <button class="footer-button" type="submit">
+              Підписатися
+              <svg>
+                <use href=""></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
