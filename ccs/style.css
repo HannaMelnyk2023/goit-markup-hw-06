@@ -215,9 +215,6 @@ img {
 }
 /* Модальне вікно */
 
-/*   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -431,6 +428,9 @@ img {
 /* .checkbox_input:focus ~ .checkbox_icon, */
 .checkbox_input:checked ~ .checkbox_icon {
   background-color: var(--accent-background);
+  outline-color: var(--accent-background);
+}
+.checkbox_input:focus ~ .checkbox_icon {
   outline-color: var(--accent-background);
 }
 
