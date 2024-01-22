@@ -263,7 +263,7 @@ img {
   transform: translate(-50%, -50%) scale(1);
 }
 
-.modal_btn {
+.modal-btn {
   position: absolute;
   top: 14px;
   right: 14px;
@@ -279,7 +279,7 @@ img {
   cursor: pointer;
 }
 
-.modal_icon {
+.modal-icon {
   fill: #000000;
 
   transition-property: fill;
@@ -287,13 +287,13 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal_btn:hover .modal_icon,
-.modal_btn:focus .modal_icon {
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon {
   fill: var(--accent-background);
 }
 
 /* Форма для зворотнього зв'язку в модальному вікні */
-.modal_recall {
+.modal-recall {
   top: 40px;
   left: 40px;
 
@@ -301,14 +301,14 @@ img {
 
   color: #000000;
 }
-.modal_form {
+.modal-form {
   width: 450px;
 }
-.form_recall {
+.form-recall {
   text-align: left;
   width: 100%;
 }
-.title_recall {
+.title-recall {
   text-align: center;
   margin-bottom: 12px;
 
@@ -318,12 +318,12 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.form_field {
+.form-field {
   margin-bottom: 10px;
   position: relative;
 }
 
-.form_field input {
+.form-field input {
   width: 100%;
 
   padding-top: 11px;
@@ -340,7 +340,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.field_icon {
+.field-icon {
   position: absolute;
   top: 30px;
   left: 12px;
@@ -349,14 +349,14 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form_field input:focus ~ .field_icon {
+.form-field input:focus ~ .field-icon {
   fill: var(--accent-background);
 }
-.form_field input:focus {
+.form-field input:focus {
   border-color: var(--accent-background);
 }
 
-.form_field textarea {
+.form-field textarea {
   width: 100%;
   border: 1px solid #21212133;
   border-radius: 4px;
@@ -380,11 +380,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form_field textarea:focus {
+.form-field textarea:focus {
   border-color: var(--accent-background);
 }
 
-.form_field label {
+.form-field label {
   margin-bottom: 4px;
 
   font-size: 12px;
@@ -408,12 +408,12 @@ img {
 }
 
 /* Ховаемо чекбокс від браузера*/
-.checkbox_input {
+.checkbox-input {
   appearance: none;
 }
 
 /* Кастомний чекбокс */
-.checkbox_icon {
+.checkbox-icon {
   position: absolute;
   top: 4px;
   left: 13px;
@@ -425,23 +425,23 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .checkbox_input:focus ~ .checkbox_icon, */
-.checkbox_input:checked ~ .checkbox_icon {
+/* .checkbox-input:focus ~ .checkbox-icon, */
+.checkbox-input:checked ~ .checkbox-icon {
   background-color: var(--accent-background);
   outline-color: var(--accent-background);
 }
-.checkbox_input:focus ~ .checkbox_icon {
+.checkbox-input:focus ~ .checkbox-icon {
   outline-color: var(--accent-background);
 }
 
 .agreement {
   padding-left: 36px;
 }
-.agreement_cases {
+.agreement-cases {
   color: var(--accent-background);
 }
 
-.button_send_recall {
+.button-send-recall {
   display: inline-block;
 
   min-width: 200px;
@@ -914,7 +914,7 @@ address {
 .footer-singup {
   margin-left: 93px;
 }
-.signup_form {
+.signup-form {
   display: flex;
   justify-content: center;
   align-items: center;
