@@ -93,10 +93,11 @@
     </symbol> -->
 
     <!-- Модальні іконки та кнопки -->
-    <symbol id="icon-close-modal" viewBox="0 0 32 32">
-<title>close-modal-focus</title>
-<path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
+<symbol id="icon-close-modal" viewBox="0 0 32 32">
+<title>icon-close-modal</title>
+<path d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
 </symbol>
+
 
 <symbol id="icon-email" viewBox="0 0 32 32">
 <title>email-black</title>
@@ -122,6 +123,7 @@
 <title>icon-check</title>
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.4" d="M7.914 16.503l-0.138-0.131-2.067 1.958 7.282 6.947 15.298-14.594-2.053-1.959-13.245 12.623-5.077-4.844z"></path>
 </symbol>
+
 
 
   </defs>
